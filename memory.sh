@@ -86,7 +86,9 @@ function shuffle_letters() {
 
 function display_board() {
   clear
-  print_lines 3
+  print_lines 1
+  printf " Moves: %s" $MOVES
+  print_lines 2
   print_matrix
   # print_matrix 1
 }
