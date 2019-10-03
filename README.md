@@ -42,9 +42,9 @@ Shuffle the letters again in a different order and input into the other half of 
 Essentially the *main game page*.
 Includes all components on what the screen of the game should include.
 Composed of:
-    - Current **number of moves** the user made
-    - Newlines to make the UI prettier
-    - The display of the **card matrix**
+   - Current **number of moves** the user made
+   - Newlines to make the UI prettier
+   - The display of the **card matrix**
 
 #### title_screen()
 Short intro page of the game **title** and **my name**
@@ -61,13 +61,13 @@ If a match is found, decrement the *hidden pair count* by 1 and return
 The ending page when the game is completed.
 I wanted to make the game rather generous and encourage completion than frustration, so there is **no game over** or **time over**.
 Print:
-    - Number of moves used
-    - Short celebration message
-    - Instruction for playing again
+   - Number of moves used
+   - Short celebration message
+   - Instruction for playing again
 If the user enters any character, prepare for a another game:
 (The input value for *entering any character* is programmed to be hidden from the user)
-    - Reset *hidden pair count* to 8 and *number of moves* to 0.
-    - Call `start_game()` function.
+   - Reset *hidden pair count* to 8 and *number of moves* to 0.
+   - Call `start_game()` function.
 
 #### start_game()
 Print the title screen by calling `title_screen()`.

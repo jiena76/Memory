@@ -128,7 +128,7 @@ function process_turn() {
 
   # echo "Selected ones: " "${matrix[$row1,$col1]}" "${matrix[$row2,$col2]}"
   if [ ${matrix[$col1,$row1]} != ${matrix[$col2,$row2]} ]; then
-    trap : ALRM # disable interupt
+    trap : ALRM # disable interrupt
     stty -echo # prevent input
     printf " Displaying cards for: 2 second"
     sleep 1
