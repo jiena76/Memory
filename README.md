@@ -24,21 +24,21 @@ ________________________________________________________________________________
 # Behind the Stage
 Language: **Shell script**, because it's the most common language for console-based interactive games.
 
-### FUNCTIONS
-#### initialize_board()
+## {FUNCTIONS}
+### initialize_board()
 Call `shuffle_letters()` to fill in the board with pairs of random alphabets from {A...H}
 Fill in another boolean matrix for indicating whether the card has been flipped or not.
-#### print_matrix({opt: arg})
+### print_matrix({opt: arg})
 Prints either the card matrix or boolean matrix depending on the number of arguments.
 0 argument = card matrix
 1 or more arguments = boolean matrix
 The card matrix will hide or show the value of the card depending on the boolean value of the corresponding index of the boolean matrix.
 
-#### shuffle_letters()
+### shuffle_letters()
 Input letters {A...H} in random orders in the left half of the card matrix.
 Shuffle the letters again in a different order and input into the other half of the card matrix.
 
-#### display_board()
+### display_board()
 Essentially the *main game page*.
 Includes all components on what the screen of the game should include.
 Composed of:
@@ -46,10 +46,10 @@ Composed of:
    - Newlines to make the UI prettier
    - The display of the **card matrix**
 
-#### title_screen()
+### title_screen()
 Short intro page of the game **title** and **my name**
 
-#### process_turn(row1, col1, row2, col2)
+### process_turn(row1, col1, row2, col2)
 This function will only be called **IFF** the user enters a valid input, (so that invalid input doesn't count as a *turn*), increment the number of moves used by 1.
 Since the `display_board()` function only reveals the card value if its corresponding boolean value is `True`, set chosen two cards' boolean values to `True`.
 Reveal the board status.
@@ -57,7 +57,7 @@ Reverse the board status to its previous form within 2 seconds if the cards are 
     - During the *2 seconds of the board display*, **disable interrupt** and **prevent user input**
 If a match is found, decrement the *hidden pair count* by 1 and return
 
-#### game_complete()
+### game_complete()
 The ending page when the game is completed.
 I wanted to make the game rather generous and encourage completion than frustration, so there is **no game over** or **time over**.
 Print:
@@ -69,13 +69,13 @@ If the user enters any character, prepare for a another game:
    - Reset *hidden pair count* to 8 and *number of moves* to 0.
    - Call `start_game()` function.
 
-#### start_game()
+### start_game()
 Print the title screen by calling `title_screen()`.
 Get the cards ready by initializing through `initialize_board()`
 Sleep for 0.7 seconds for the title screen display.
 Then call `display_board()` to display the cards to start the game!
 
-### the MAIN method
+## the MAIN method
 
 
 <!-- A brief explanation of your design choices and any data structures or algorithms that you implemented
