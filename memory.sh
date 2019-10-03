@@ -13,6 +13,16 @@ MOVES=0
 
 
 ##### FUNCTIONS #####
+# print_lines
+# print_spaces
+# initialize_board
+# shuffle_letters
+# display_board
+# title_screen
+# process_turn
+# game_complete
+# start_game
+
 function print_lines() { for ((j=0;j<$1;j++)) do printf "\n"; done }
 function print_spaces() { for ((j=0;j<$1;j++)) do echo -n " "; done }
 
