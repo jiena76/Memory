@@ -25,8 +25,6 @@ ________________________________________________________________________________
 Language: **Shell script**, because it's the most common language for console-based interactive games.
 
 ## Functions Used:
-### print_lines
-### print_spaces
 ### initialize_board
 Call `shuffle_letters()` to fill in the board with pairs of random alphabets from {A...H}
 Fill in another boolean matrix for indicating whether the card has been flipped or not.
