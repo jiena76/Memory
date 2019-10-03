@@ -106,5 +106,6 @@ Additinally, keeping the records of highest score, or lowest moves for the *All-
 As user plays each turn, saving previous inputs doesn't sound like a bad idea either.
 
 This was a very unique and fun yet creative project that I had an opportunity to build.
+In the future, I hope to seek for opportunities where I can thoroughly enjoy exploring my own potentials.
 
 Jieun Lee, 10/3/2019
