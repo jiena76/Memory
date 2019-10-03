@@ -114,18 +114,19 @@ function process_turn() {
   matrixBool[$col1,$row1]=true
   matrixBool[$col2,$row2]=true
 
-  trap : ALRM # disable interupt
-  stty -echo # prevent input
   display_board
-  printf " Displaying cards for: 2 second"
-  sleep 1
-  display_board
-  printf " Displaying cards for: 1 second"
-  sleep 1
-  stty echo # enable input
 
   # echo "Selected ones: " "${matrix[$row1,$col1]}" "${matrix[$row2,$col2]}"
   if [ ${matrix[$col1,$row1]} != ${matrix[$col2,$row2]} ]; then
+    trap : ALRM # disable interupt
+    stty -echo # prevent input
+    printf " Displaying cards for: 2 second"
+    sleep 1
+    display_board
+    printf " Displaying cards for: 1 second"
+    sleep 1
+    stty echo # enable input
+
     matrixBool[$col1,$row1]=false
     matrixBool[$col2,$row2]=false
     display_board
