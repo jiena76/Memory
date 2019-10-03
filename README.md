@@ -30,8 +30,8 @@ Call `shuffle_letters()` to fill in the board with pairs of random alphabets fro
 Fill in another boolean matrix for indicating whether the card has been flipped or not.
 ### print_matrix({opt: arg})
 Prints either the card matrix or boolean matrix depending on the number of arguments.
-0 argument = card matrix
-1 or more arguments = boolean matrix
+   - 0 argument = card matrix
+   - 1 or more arguments = boolean matrix
 The card matrix will hide or show the value of the card depending on the boolean value of the corresponding index of the boolean matrix.
 
 ### shuffle_letters()
@@ -77,7 +77,19 @@ Then call `display_board()` to display the cards to start the game!
 
 ## the MAIN method
 (Error handling)
-If an error occurs,
+If an error occurs, redirect error file descriptor to /dev/null
+
+Call `start_game()` to start the game!
+
+A while loop will be running which includes:
+   - Several prompts to guide the user to input the ROW-COL values
+   - Validate the input: Did user input *numbers* between 1~4?
+   - Refresh the page by calling `display_board()`
+   - Before the prompts for new inputs appear, output the warning messages:
+      - Invalid input for: { Row/Col-1/2 } (not numbers or out of bound)
+      - User has selected 2 of the same cards!
+      - User selected some cards that have already been flipped
+   - If all passes, call `process_turn()`!
 
 <!-- A brief explanation of your design choices and any data structures or algorithms that you implemented
 Choice of tooling (language, libraries, test runner, etc.) and rationale behind those choices. -->
