@@ -86,7 +86,7 @@ A while loop will be running which includes:
    - Validate the input: Did user input *numbers* between 1~4?
    - Refresh the page by calling `display_board()`
    - Before the prompts for new inputs appear, output the warning messages:
-      - Invalid input for: { Row/Col-1/2 } (not numbers or out of bound)
+      - Invalid input for: { Row-1 Col-1 Row-2 Col-2 } (not numbers or out of bound)
       - User has selected 2 of the same cards!
       - User selected some cards that have already been flipped
    - If all passes, call `process_turn()`!
