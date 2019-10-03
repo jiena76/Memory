@@ -1,11 +1,11 @@
 # Memory
 is a Console-based Unix-compatible Card Game.
 
-## To run the game
+### To run the game
 Go under the directory where the file `memory.sh` lives.
 Type `./memory.sh` in your console, and press `Enter`!
 
-## How the game works
+### How the game works
 When the game begins, you will see a 4x4 grid of cards. (Total of 16 cards, 8 pairs)
 Your job is to flip the matching pairs until *ALL* cards have been flipped!
 
@@ -17,7 +17,7 @@ Your job is to flip the matching pairs until *ALL* cards have been flipped!
    - **No**: the values of the cards will be **displayed for 2 seconds**.
 3. Once all cards have been flipped, you'll be redirected to the ending page where you have an option to play another.
 
-## To quit the game
+### To quit the game
 Press `ctrl+C` or `cmd+C` anytime to exit.
 
 _____________________________________________________________________________________________
