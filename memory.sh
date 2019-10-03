@@ -231,7 +231,6 @@ do
     echo "You've selected some card(s) that have already been flipped!"
   else
     process_turn row1 col1 row2 col2
-    echo $WARNING_STRING
   fi
     
 done
