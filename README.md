@@ -28,7 +28,7 @@ Language: **Shell script**, because it's the most common language for console-ba
 #### initialize_board()
 Call `shuffle_letters()` to fill in the board with pairs of random alphabets from {A...H}
 Fill in another boolean matrix for indicating whether the card has been flipped or not.
-#### print_matrix()
+#### print_matrix({opt: arg})
 Prints either the card matrix or boolean matrix depending on the number of arguments.
 0 argument = card matrix
 1 or more arguments = boolean matrix
@@ -49,7 +49,7 @@ Composed of:
 #### title_screen()
 Short intro page of the game **title** and **my name**
 
-#### process_turn()
+#### process_turn(row1, col1, row2, col2)
 This function will only be called **IFF** the user enters a valid input, (so that invalid input doesn't count as a *turn*), increment the number of moves used by 1.
 Since the `display_board()` function only reveals the card value if its corresponding boolean value is `True`, set chosen two cards' boolean values to `True`.
 Reveal the board status.
