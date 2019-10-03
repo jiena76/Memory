@@ -21,7 +21,7 @@ Your job is to flip the matching pairs until *ALL* cards have been flipped!
 Press `ctrl+C` or `cmd+C` anytime to exit.
 
 _____________________________________________________________________________________________
-### Behind the Stage
+# Behind the Stage
 Language: **Shell script**, because it's the most common language for console-based interactive games.
 
 ## Functions Used:
