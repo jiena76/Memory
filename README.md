@@ -11,17 +11,17 @@ Your job is to flip the matching pairs until *ALL* cards have been flipped!
 
 ## Instructions
 1. Choose the pair of cards to flip by typing the number sequence in the order of **Row1 Col1 Row2 Col2**.
-  - Example: *1312* is Card 1 at (1, 3) and Card 2 at (1, 2)
-2. Do the cards match?
-  - Yes: the cards will be **flipped immediately**.
-  - No: the values of the cards will be **displayed for 2 seconds**.
+   - Example: *1312* is Card 1 at (1, 3) and Card 2 at (1, 2)
+2. *Do the cards match?*
+   - **Yes**: the cards will be **flipped immediately**.
+   - **No**: the values of the cards will be **displayed for 2 seconds**.
 3. Once all cards have been flipped, you'll be redirected to the ending page where you have an option to play another.
 
 ## To quit the game
 Press `ctrl+C` or `cmd+C` anytime to exit.
 
-# Shower Thoughts
-
+_____________________________________________________________________________________________
+### Behind the Curtain Stuff
 *Language Used*: Bash script, because it's the most common language for console-based interactive games!
 
 ## Functions Used:
