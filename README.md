@@ -41,6 +41,7 @@ Shuffle the letters again in a different order and input into the other half of 
 ### display_board()
 Essentially the *main game page*.
 Includes all components on what the screen of the game should include.
+
 Composed of:
    - Current **number of moves** the user made
    - Newlines to make the UI prettier
@@ -60,6 +61,7 @@ If a match is found, decrement the *hidden pair count* by 1 and return.
 ### game_complete()
 The ending page when the game is completed.
 I wanted to make the game rather generous and encourage completion than frustration, so there is **no game over** or **time over**.
+
 Print:
    - Number of moves used
    - Short celebration message
