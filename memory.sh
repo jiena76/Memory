@@ -16,6 +16,7 @@ MOVES=0
 # print_lines
 # print_spaces
 # initialize_board
+# print_matrix
 # shuffle_letters
 # display_board
 # title_screen
@@ -126,7 +127,6 @@ function process_turn() {
 
   display_board
 
-  # echo "Selected ones: " "${matrix[$row1,$col1]}" "${matrix[$row2,$col2]}"
   if [ ${matrix[$col1,$row1]} != ${matrix[$col2,$row2]} ]; then
     trap : ALRM # disable interrupt
     stty -echo # prevent input
