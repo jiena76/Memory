@@ -60,7 +60,7 @@ If a match is found, decrement the *hidden pair count* by 1 and return.
 
 ### game_complete()
 The ending page when the game is completed.
-I wanted to make the game rather generous and encourage completion than frustration, so there is **no game over** or **time over**.
+I wanted to make the game rather generous and encourage completion than frustration (better UX), so there is **no game over** or **time over**.
 
 Print:
    - Number of moves used
@@ -86,12 +86,10 @@ Call `start_game()` to start the game!
 A while loop will be running which includes:
    - Several prompts to guide the user to input the ROW-COL values
    - Validate the input: Did user input *numbers* between 1~4?
+      - There are 4 different if statements for { Row-1 Col-1 Row-2 Col-2 }, to specifically indicate which input was invalid to the user.
    - Refresh the page by calling `display_board()`
    - Before the prompts for new inputs appear, output the warning messages:
       - Invalid input for: { Row-1 Col-1 Row-2 Col-2 } (not numbers or out of bound)
       - User has selected 2 of the same cards!
       - User selected some cards that have already been flipped
    - If all passes, call `process_turn()`!
-
-<!-- A brief explanation of your design choices and any data structures or algorithms that you implemented
-Choice of tooling (language, libraries, test runner, etc.) and rationale behind those choices. -->
