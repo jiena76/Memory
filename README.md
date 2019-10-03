@@ -33,6 +33,7 @@ Prints either the card matrix or boolean matrix depending on the number of argum
    - 0 argument = card matrix
    - 1 or more arguments = boolean matrix
 The card matrix will hide or show the value of the card depending on the boolean value of the corresponding index of the boolean matrix.
+*(The code for the print_matrix() function has been obtained from: https://stackoverflow.com/a/16487733)*
 
 ### shuffle_letters()
 Input letters {A...H} in random orders in the left half of the card matrix.
@@ -84,12 +85,24 @@ If an error occurs, redirect error file descriptor to /dev/null.
 Call `start_game()` to start the game!
 
 A while loop will be running which includes:
-   - Several prompts to guide the user to input the ROW-COL values
+   - Several prompts to guide the user to input the **ROW-COL** values
    - Validate the input: Did user input *numbers* between 1~4?
-      - There are 4 different if statements for { Row-1 Col-1 Row-2 Col-2 }, to specifically indicate which input was invalid to the user.
+      - There are **4** different **if** statements for { Row-1 Col-1 Row-2 Col-2 }, to *specifically* indicate which input was invalid to the user.
    - Refresh the page by calling `display_board()`
    - Before the prompts for new inputs appear, output the warning messages:
-      - Invalid input for: { Row-1 Col-1 Row-2 Col-2 } (not numbers or out of bound)
-      - User has selected 2 of the same cards!
-      - User selected some cards that have already been flipped
+      - Invalid input for: { Row-1 Col-1 Row-2 Col-2 } (**not numbers** or **out of bound**)
+      - User has selected **2 of the same cards**!
+      - User selected some cards that have **already been flipped**
    - If all passes, call `process_turn()`!
+
+## Final Thoughts
+This game has been programmed to be efficient and deliver the best user experience.
+For example, starting a new game *continues* the while loop that has been running.
+All validation for user input is done within the while loop to prevent calling the `process_turn()` function with invalid inputs.
+User's *number of moves* only increment once valid input has been entered.
+
+If I were to spend more time on this project in the future, I would like to create an interactive grid system where the user can *highlight* which card to flip instead of typing which row/col value of the card they would like to flip.
+Additinally, keeping the records of highest score, or lowest moves for the *All-time high-score*.
+As user plays each turn, saving previous inputs doesn't sound like a bad idea either.
+
+This was a very unique and fun yet creative project that I had an opportunity to build.
